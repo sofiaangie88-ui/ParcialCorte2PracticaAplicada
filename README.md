@@ -1,7 +1,5 @@
 # ParcialCorte2PracticaAplicada
 
-# Parcial Corte 2 - Práctica Aplicada
-
 ## Detalles de la aplicación
 
 La aplicación es un sistema desarrollado en Java para la gestión de tarjetas de crédito y débito asociadas a un titular.
@@ -34,7 +32,7 @@ También se agregaron métodos en la clase `Tarjeta` para consultar y modificar 
 
 En el formulario principal se agregó la selección del estado y se implementó la validación correspondiente para evitar que una tarjeta pueda ser creada sin un estado válido.
 
----
+
 
 ## Historia de Usuario HU-01
 
@@ -55,7 +53,7 @@ En el formulario principal se agregó la selección del estado y se implementó 
 
 5. No será posible guardar una tarjeta sin un estado válido.
 
----
+
 
 ## Implementación de la HU-01
 
@@ -63,15 +61,7 @@ La implementación de esta historia de usuario implicó realizar cambios en el m
 
 ### Modelo
 
-Se creó el enumerado `EstadoTarjeta`, que contiene los tres estados definidos para las tarjetas:
-
-```java
-public enum EstadoTarjeta {
-    ACTIVA,
-    BLOQUEADA,
-    CANCELADA
-}
-```
+Se creó el enumerado `EstadoTarjeta`, que contiene los tres estados definidos para las tarjetas
 
 En la clase abstracta `Tarjeta` se agregó el atributo `estado`, permitiendo que todas las tarjetas tengan asociado uno de los estados definidos.
 
@@ -117,7 +107,7 @@ En las consultas también se recupera el estado desde MySQL y se convierte nueva
 
 De esta manera, tanto las tarjetas de crédito como las tarjetas débito pueden almacenar y recuperar correctamente su estado.
 
----
+
 
 ## Estimación de la Historia de Usuario
 
@@ -125,7 +115,7 @@ La Historia de Usuario HU-01 tiene una estimación de **5 puntos de historia**.
 
 La estimación contempla los cambios necesarios para implementar la funcionalidad completa, incluyendo las modificaciones realizadas en el modelo, la interfaz gráfica, las validaciones, la capa de acceso a datos, la base de datos y las pruebas.
 
----
+
 
 ## Tareas técnicas necesarias
 
